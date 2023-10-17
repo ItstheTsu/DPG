@@ -8,7 +8,6 @@ O DPG é uma plataforma online que oferece um dashboard completo e personalizáv
 
 ## Recursos Principais
 
-- **Personalização**: Crie seu próprio painel com os jogos e informações que mais interessam para você.
 - **Estatísticas Detalhadas**: Acompanhe estatísticas detalhadas de jogabilidade, conquistas e progresso em tempo real.
 - **Notícias Atualizadas**: Mantenha-se informado sobre as últimas notícias e atualizações dos seus jogos preferidos.
 - **Comunidade**: Conecte-se com outros jogadores, participe de fóruns e compartilhe suas conquistas.
