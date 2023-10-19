@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const lista = document.getElementById('dashboard');
-    const itens = lista.getElementsByTagName('div');
+    const itens = lista.getElementsByTagName('a');
     const body = document.body;
 
     const imagens = [

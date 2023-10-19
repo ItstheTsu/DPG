@@ -8,6 +8,7 @@
   border: none;
   outline: none;
   font-family: "Poppins", sans-serif;
+  color: #fff;
 }
 
 html {
@@ -89,7 +90,8 @@ body {
   margin-bottom: 4rem;
 }
 
-.dashboard-top {
+.dashboard-top,
+.dashboard-library {
   display: flex;
   align-items: center;
   width: 100%;
@@ -97,7 +99,8 @@ body {
   justify-content: space-between;
   padding: 4rem 2%;
 }
-.dashboard-top .item {
+.dashboard-top .item,
+.dashboard-library .item {
   position: relative;
   border-radius: 5px;
   width: 14vw;
@@ -113,17 +116,21 @@ body {
   transition: 0.4s;
   cursor: pointer;
 }
-.dashboard-top .item .logo img {
+.dashboard-top .item .logo img,
+.dashboard-library .item .logo img {
   width: 14vw;
 }
-.dashboard-top .item:nth-child(3) .logo img {
+.dashboard-top .item:nth-child(3) .logo img,
+.dashboard-library .item:nth-child(3) .logo img {
   width: 16vw;
 }
-.dashboard-top .item:last-child .logo img {
+.dashboard-top .item:last-child .logo img,
+.dashboard-library .item:last-child .logo img {
   width: 20vw;
   margin-left: 12rem;
 }
-.dashboard-top .item:hover {
+.dashboard-top .item:hover,
+.dashboard-library .item:hover {
   transform: scale(1.1);
   border: 5px solid #fff;
 }
@@ -140,40 +147,112 @@ body {
   background-color: rgba(73, 67, 67, 0.1);
   border-radius: 5px;
 }
-.dashboard-bottom .more {
+.dashboard-bottom a {
   width: 25%;
-  margin-inline: 1rem;
   height: 100%;
+  margin-inline: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.3s;
 }
-.dashboard-bottom .more .text-more {
+.dashboard-bottom a .text-more {
   font-size: 3rem;
   color: #fff;
   text-shadow: 0px 0px 5px #000;
 }
-.dashboard-bottom .more:nth-child(1) {
+.dashboard-bottom a:nth-child(1) {
   background: url("/Images/Assets/Banners/fundoRED.jpg");
   background-size: cover;
 }
-.dashboard-bottom .more:nth-child(2) {
+.dashboard-bottom a:nth-child(2) {
   background: url("/Images/Assets/Banners/fundoGTA.jpg");
   background-size: cover;
 }
-.dashboard-bottom .more:nth-child(3) {
+.dashboard-bottom a:nth-child(3) {
   background: url("/Images/Assets/Banners/FundoFIFA.jpg");
   background-size: cover;
 }
-.dashboard-bottom .more:nth-child(4) {
+.dashboard-bottom a:nth-child(4) {
   background: url("/Images/Assets/Banners/fundoForza.jpg");
   background-size: cover;
 }
-.dashboard-bottom .more:hover {
+.dashboard-bottom a:hover {
   transform: scale(1.03);
   box-shadow: none;
+}
+
+.game1 {
+  padding: 5rem 0 0 0;
+  min-height: 200vh;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 43.5vh;
+}
+.game-info .logo img {
+  width: 20vw;
+  height: 20vw;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+}
+.game-info .name-date-conq {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.game-info .name-date-conq .name-date {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  font-weight: 800;
+  text-shadow: 0 0 5px #000;
+}
+.game-info .name-date-conq .name-date .name {
+  font-size: 5rem;
+}
+.game-info .name-date-conq .name-date .date {
+  font-size: 2rem;
+  font-weight: 600 !important;
+}
+.game-info .name-date-conq .conq {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 3rem;
+  background: rgba(0, 0, 0, 0.4);
+  width: 98%;
+  padding: 1rem;
+}
+.game-info .name-date-conq .conq h4:first-child {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+.game-info .name-date-conq .conq img {
+  width: 2vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.game-info .name-date-conq .conq img:hover {
+  transform: scale(1.02);
+}
+
+.conqrec:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.dashboard-library {
+  padding: 0 1.5rem;
+}
+
+.dashboard-library .item:first-child .logo img {
+  width: 20vw;
+  margin-left: 12rem;
 }/*# sourceMappingURL=style.css.map */
