@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             body.style.backgroundImage = `url(${imagens[this.id]})`;
             body.style.backgroundSize = 'cover';
-            body.style.transition = 'ease-in-out .8s';
+            body.style.transition = 'ease-in-out .3s';
             body.style.backgroundPosition = 'center';
         });
     }
