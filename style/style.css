@@ -1,1 +1,179 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@200;300;400;500 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+body {
+  background: url("/Images/Assets/Banners/fundoEldenRing.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 2rem 1rem 2rem;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.3);
+  padding: 1rem 4%;
+  backdrop-filter: blur(15px) saturate(115%);
+  -webkit-backdrop-filter: blur(15px) saturate(115%);
+  background-color: rgba(73, 67, 67, 0.1);
+}
+.header .header-left img {
+  width: 6vw;
+}
+.header .navbar a {
+  font-size: 1.8rem;
+  color: #fff;
+  position: relative;
+  transition: ease 0.3s;
+}
+.header .navbar a::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 0%;
+  height: 2px;
+}
+.header .navbar a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+}
+.header .navbar a:not(:first-child) {
+  margin-left: 2rem;
+}
+.header .header-right {
+  text-align: right;
+}
+.header .header-right .perfil,
+.header .header-right .type {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.titleHome,
+.titleExploreMore {
+  font-size: 3.6rem;
+  color: #fff;
+  margin-top: 3rem;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.titleExploreMore {
+  margin-bottom: 4rem;
+}
+
+.dashboard-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40vh;
+  justify-content: space-between;
+  padding: 4rem 2%;
+}
+.dashboard-top .item {
+  position: relative;
+  border-radius: 5px;
+  width: 14vw;
+  height: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  backdrop-filter: blur(15px) saturate(115%);
+  -webkit-backdrop-filter: blur(15px) saturate(115%);
+  background-color: rgba(73, 67, 67, 0.1);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.dashboard-top .item .logo img {
+  width: 14vw;
+}
+.dashboard-top .item:nth-child(3) .logo img {
+  width: 16vw;
+}
+.dashboard-top .item:last-child .logo img {
+  width: 20vw;
+  margin-left: 12rem;
+}
+.dashboard-top .item:hover {
+  transform: scale(1.1);
+  border: 5px solid #fff;
+}
+
+.dashboard-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vh;
+  padding: 2rem;
+  backdrop-filter: blur(15px) saturate(115%);
+  -webkit-backdrop-filter: blur(15px) saturate(115%);
+  background-color: rgba(73, 67, 67, 0.1);
+  border-radius: 5px;
+}
+.dashboard-bottom .more {
+  width: 25%;
+  margin-inline: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+.dashboard-bottom .more .text-more {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+}
+.dashboard-bottom .more:nth-child(1) {
+  background: url("/Images/Assets/Banners/fundoRED.jpg");
+  background-size: cover;
+}
+.dashboard-bottom .more:nth-child(2) {
+  background: url("/Images/Assets/Banners/fundoGTA.jpg");
+  background-size: cover;
+}
+.dashboard-bottom .more:nth-child(3) {
+  background: url("/Images/Assets/Banners/FundoFIFA.jpg");
+  background-size: cover;
+}
+.dashboard-bottom .more:nth-child(4) {
+  background: url("/Images/Assets/Banners/fundoForza.jpg");
+  background-size: cover;
+}
+.dashboard-bottom .more:hover {
+  transform: scale(1.03);
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */
