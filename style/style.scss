@@ -327,7 +327,12 @@ body {
     display: flex;
     width: 100%;
     height: auto;
-    background: pink;
+    backdrop-filter: blur(15px) saturate(115%);
+    -webkit-backdrop-filter: blur(15px) saturate(115%);
+    background-color: rgba(73, 67, 67, 0.1);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 2rem;
 
