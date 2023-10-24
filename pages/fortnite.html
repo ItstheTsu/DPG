@@ -94,6 +94,97 @@
 
         </div>
     </section>
+
+    <section id="game1-dashborad" class="game1-dashboard">
+        <div class="title-estatistic">
+            <h1>Análise</h1>
+        </div>
+        <!-- Objetos para movimento -->
+        <div class="cards-move">
+            <img src="../Images/Assets/ControlePS5.png" alt="" id="img-move1">
+            <img src="../Images/Assets/ControleXboxOne.png" alt="" id="img-move2">
+            <img src="../Images/Assets/ControleNintendo.png" alt="" id="img-move3">
+        </div>
+
+        <!-- Graficos -->
+        <div class="graphic">
+            <div class="estatistic">
+                <canvas id="myChart1"></canvas>
+            </div>
+            <div class="estatistic">
+                <canvas id="myChart2"></canvas>
+            </div>
+            <div class="estatistic">
+                <canvas id="myChart3"></canvas>
+            </div>
+            <div class="estatistic">
+                <canvas id="myChart4"></canvas>
+            </div>
+        </div>
+    </section>
 </body>
 <script src="/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx1 = document.getElementById('myChart1').getContext('2d');
+    let grafico1 = new Chart(ctx1, {
+        type: 'doughnut',
+        data: {
+            labels: ['AFK', 'Mortes - Jogo todo', 'Tempo Vivo'],
+            datasets: [{
+                data: ["24", "36", "40"],
+                backgroundColor: ['red', 'green', 'blue']
+            }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Variabilidade de jogo'
+                }
+            }
+        }
+    });
+
+    const ctx2 = document.getElementById('myChart2').getContext('2d');
+    let grafico2 = new Chart(ctx2, {
+        type: 'doughnut',
+        data: {
+            labels: ['Jogado durante a semana'],
+            datasets: [{
+                data: [100],
+                backgroundColor: ['yellow',]
+            }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Tempo de jogo'
+                }
+            }
+        }
+    });
+
+    const ctx3 = document.getElementById('myChart3').getContext('2d');
+    let grafico3 = new Chart(ctx3, {
+        type: 'doughnut',
+        data: {
+            labels: ['Conquistas simples', 'Conquistas intermediárias', 'Conquistas avançadas', 'Conquistas secretas'],
+            datasets: [{
+                data: [56, 22, 15, 7],
+                backgroundColor: ['red', 'green', 'blue', 'purple']
+            }]
+        },
+        options: {
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Taxa de conquistas'
+                }
+            }
+        }
+    });
+
+</script>
 </html>

@@ -213,7 +213,7 @@ body {
 .game1 {
     padding: 5rem 0 0 0;
     min-height: 100vh;
-    margin-bottom: -4rem;
+    margin-bottom: -6.5rem;
 }
 
 .game-info {
@@ -296,9 +296,11 @@ body {
 
 // Gráficos
 .game1-dashboard {
-    height: fit-content;
     background: linear-gradient(#267c57, #162e43);
     width: 100%;
+    position: absolute;
+    left: 0;
+    padding: 1rem 0 1rem 0;
 }
 
 .title-estatistic {
