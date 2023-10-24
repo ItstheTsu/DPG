@@ -272,8 +272,8 @@ body {
   align-items: center;
 }
 .title-estatistic h1 {
-  color: #000;
-  font-size: 5rem;
+  margin-top: 3rem;
+  font-size: 6rem;
   margin-bottom: 1rem;
 }
 
