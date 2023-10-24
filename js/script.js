@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const lista = document.getElementById('dashboard');
     const itens = lista.getElementsByTagName('a');
     const body = document.body;
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     for (let i = 0; i < itens.length; i++) {
-        itens[i].addEventListener('mouseover', function() {
+        itens[i].addEventListener('mouseover', function () {
             for (let j = 0; j < itens.length; j++) {
                 itens[j].classList.remove('selecionado');
             }
@@ -27,3 +27,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+

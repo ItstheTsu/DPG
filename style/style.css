@@ -187,7 +187,8 @@ body {
 
 .game1 {
   padding: 5rem 0 0 0;
-  min-height: 200vh;
+  min-height: 100vh;
+  margin-bottom: -4rem;
 }
 
 .game-info {
@@ -255,4 +256,40 @@ body {
 .dashboard-library .item:first-child .logo img {
   width: 20vw;
   margin-left: 12rem;
+}
+
+.game1-dashboard {
+  padding: 1rem;
+  height: 100vh;
+}
+
+.title-estatistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-estatistic h1 {
+  color: #000;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.graphic {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 10rem;
+}
+
+.estatistic {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: pink;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.estatistic canvas {
+  max-height: 50vh;
 }/*# sourceMappingURL=style.css.map */
