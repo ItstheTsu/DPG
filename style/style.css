@@ -259,8 +259,10 @@ body {
 }
 
 .game1-dashboard {
-  padding: 1rem;
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: linear-gradient(#267c57, #162e43);
+  width: 100%;
 }
 
 .title-estatistic {
@@ -292,4 +294,29 @@ body {
 }
 .estatistic canvas {
   max-height: 50vh;
+}
+
+.cards-move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cards-move img {
+  width: 20vw;
+  position: absolute;
+}
+.cards-move img:nth-child(1) {
+  top: -50px;
+  left: -150px;
+  transform: rotate(30deg);
+}
+.cards-move img:nth-child(2) {
+  bottom: -130vh;
+  margin-left: 20px;
+}
+.cards-move img:nth-child(3) {
+  top: -50px;
+  right: -150px;
+  transform: rotate(-30deg);
 }/*# sourceMappingURL=style.css.map */
